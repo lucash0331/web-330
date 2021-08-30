@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
 	Title: site.css
 	Author: Lucas Hoffman
@@ -68,3 +69,165 @@
 .full-width {
     width: 100%;
 }
+=======
+/**
+	Title: site.css
+	Author: Lucas Hoffman
+	Date: 8/13/2021
+	Description: CSS file for WEB-330 course
+    Link to GitHub repository: https://github.com/lucash0331/web-330
+    Link to Github Landing page: https://lucash0331.github.io/web-330/
+*/
+
+/** Styling parameters for links */
+a {
+    color: var(--anchor-color);
+    text-decoration: none;
+}
+
+/** Styling parameters for when you hover over links */
+a:hover {
+    background-color: var(--anchor-hover-background-color);
+    color: var(--anchor-hover-color);
+}
+
+/** Styling parameters for after you click on a link */
+a:visited {
+    color: #3c2751;
+}
+
+/** Styling parameters for background color */
+background-color {
+    var(--anchor-hover-background-color);
+    color: var(--anchor-hover-color);
+}
+
+/** Styling parameters for the app header */
+.app-header {
+    text-align: center;
+    font-weight: 400;
+    border: none;
+    color: inherit;
+    background-color: inherit;
+}
+
+/** Styling parameters for return link */
+.return-home {
+    color: #4f3674;
+    text-decoration: none;
+}
+
+/** Styling parameters for when you hover over return link */
+.return-home:hover {
+    background-color: #d6a800;
+    color: #4f3674;
+}
+
+/** Styling parameters for after you click on the return link */
+.return-home:visited {
+    color: #3c275a;
+}
+
+/** Styling parameters for assign container  */
+.assign-container {
+    padding: 10px;
+}
+
+/** Styling parameters for assign content  */
+.assign-content {
+    width: 600px;
+    margin: 3% auto 0;
+}
+
+/** Styling parameters for assign results text */
+.assign-results-text {
+    text-align: center;
+    font-size: 28px;
+}
+
+/** Styling parameters for the form */
+.form {
+    display: inline-grid;
+    grid-template-columns: auto;
+}
+
+/** Styling parameters for form field */
+.form-field {
+    padding: 20px;
+}
+
+/** Styling parameters for full-width */
+.full-width {
+    width: 100%;
+}
+
+/** Styling parameters for card */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: var(--card-background-color);
+}
+
+/** Styling parameters for card title */
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    color: var(--card-title-color);
+    font-weight: 400;
+}
+
+/** Styling parameters for card content  */
+.card-content {
+    padding: 2px 16px;
+}
+
+/** Styling parameters for when you hover over a card */
+.card:hover {
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/** Styling parameters for buttons */
+.btn {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 15px 32px;
+    color: black;
+}
+
+/** Styling parameters for primary button */
+.btn-primary {
+    background-color: var(--btn-background-color);
+    color: var(--btn-color);
+}
+
+/** Styling parameters for when you hover over primary button */
+.btn-primary:hover {
+    background-color: var(--btn-hover-background-color);
+    color: var(--btn-hover-color);
+}
+
+/** Styling parameters for drop down menu  */
+.drop-down-menu {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: solid 1px var(--input-border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/** Styling parameters for inputting data */
+.input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: solid 1px var(--input-border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+>>>>>>> 4f49a11102e88ce56653a3c68c2b47575b4997ab
