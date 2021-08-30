@@ -1,4 +1,4 @@
-/**
+/*
 	Title: theme.js
 	Author: Lucas Hoffman
 	Date: 8/13/2021
