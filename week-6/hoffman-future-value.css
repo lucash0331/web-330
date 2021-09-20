@@ -1,0 +1,19 @@
+/*
+Title: hoffman-future-value.css
+Author: Lucas Hoffman
+Date: 09/18/2021
+Description: hoffman-future-value css file for week 6
+*/
+
+.danger {
+    float: right;
+    color: #df546a;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-align: right;
+}
+
+.form-label {
+    display: inline-block;
+    padding-top: 1rem;
+}
