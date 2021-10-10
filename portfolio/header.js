@@ -19,7 +19,6 @@ class Header extends HTMLElement {
                   <a href="index.html">Home</a>
                   <a href="about.html">About</a>
                   <a href="projects.html">Projects</a>
-                  <a href="devops.html">DevOps</a>
                   <a href="resume.html">Resume</a>
               </nav>
           </div>
