@@ -21,7 +21,7 @@ class Header extends HTMLElement {
                   <a href="projects.html">Projects</a>
                   <a href="devops.html">Devops</a>
                   <a href="resume.html">Resume</a>
-                  <a href="/web-335/hoffman-diagrams.html">Diagrams</a>
+                  <a href="hoffman-diagrams.html">Diagrams</a>
               </nav>
           </div>
       </div>
