@@ -1,0 +1,388 @@
+/*
+Title: site.css
+Author: Lucas Hoffman
+Date: 10/06/2021
+Description: site.css file for personal portfolio
+*/
+
+body {
+    color: black;
+    font-family: "Oswald", Verdana, Arial, sans-serif;
+    margin: 0;
+    padding-top: 150px;
+    background-image: url(images/background.jpg) ;
+    background-size: 100% 100%;
+    
+  }
+  
+  /** STYLING FOR HEADER **/
+  
+  .cbp-af-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #FFCB05;
+    z-index: 10000;
+    height: 170px;
+    overflow: hidden;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
+    border-bottom: 4px solid #00274C;
+    border-top: 4px solid #00274C;
+  }
+  
+  .cbp-af-header .cbp-af-inner {
+    width: 95%;
+    max-width: 90em;
+    margin: 0 auto;
+    padding: 0 1.875em;
+  }
+  
+  .cbp-af-header h1,
+  .cbp-af-header nav {
+    display: inline-block;
+    position: relative;
+  }
+  
+  /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
+  .cbp-af-header h1,
+  .cbp-af-header nav a {
+    line-height: 200px;
+  }
+  
+  .cbp-af-header h1 {
+    text-transform: uppercase;
+    text-shadow: 2px 2px whitesmoke;
+    color: #00274C;
+    letter-spacing: 3px;
+    font-size: 3.5em;
+    margin: 0;
+    float: left;
+    transition: letter-spacing 0.2s;
+  }
+  
+  .cbp-af-header h1:hover {
+    letter-spacing: 0.2em;
+  }
+  
+  .cbp-af-header nav {
+    float: right;
+  }
+  
+  .cbp-af-header nav a {
+    color: #00274C;
+    font-weight: 700;
+    text-shadow: 2px 2px whitesmoke;
+    margin: 0 0 0 20px;
+    font-size: 1.4em;
+    text-decoration: none;
+    transition: letter-spacing 0.2s;
+  }
+  
+  .cbp-af-header nav a:hover {
+    color: #333;
+    text-shadow: 2px 2px #FFCB05;
+    letter-spacing: 0.1em;
+  }
+  
+  /* Transitions and class for reduced height */
+  .cbp-af-header h1,
+  .cbp-af-header nav a {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  
+  .cbp-af-header.cbp-af-header-shrink {
+    height: 90px;
+  }
+  
+  .cbp-af-header.cbp-af-header-shrink h1,
+  .cbp-af-header.cbp-af-header-shrink nav a {
+    line-height: 90px;
+  }
+  
+  .cbp-af-header.cbp-af-header-shrink h1 {
+    font-size: 2em;
+  }
+  
+  /* Example Media Queries */
+  @media screen and (max-width: 55em) {
+    .cbp-af-header .cbp-af-inner {
+      width: 100%;
+    }
+  
+    .cbp-af-header h1,
+    .cbp-af-header nav {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      float: none;
+    }
+  
+    .cbp-af-header h1,
+    .cbp-af-header nav a {
+      line-height: 115px;
+    }
+  
+    .cbp-af-header nav a {
+      margin: 0 10px;
+    }
+  
+    .cbp-af-header.cbp-af-header-shrink h1,
+    .cbp-af-header.cbp-af-header-shrink nav a {
+      line-height: 45px;
+    }
+  
+    .cbp-af-header.cbp-af-header-shrink h1 {
+      font-size: 2em;
+    }
+  
+    .cbp-af-header.cbp-af-header-shrink nav a {
+      font-size: 1em;
+    }
+  }
+  
+  @media screen and (max-width: 32.25em) {
+    .cbp-af-header nav a {
+      font-size: 1em;
+    }
+  }
+  
+  @media screen and (max-width: 24em) {
+    .cbp-af-header nav a,
+    .cbp-af-header.cbp-af-header-shrink nav a {
+      line-height: 1;
+    }
+  }
+  
+  /** END OF STYLING FOR HEADER **/
+  
+  .main-content {
+    margin: 0;
+    padding: 10px;
+    padding-bottom: 15px 0 15px 0;
+    background-color: #FFCB05;
+  }
+  
+  #footer {
+    font-size: 0.8em;
+    height: 35px;
+    border-top: 2px solid #FFCB05;
+    border-bottom: 2px solid #FFCB05;
+    border-left: 2px solid #FFCB05;
+    border-right: 2px solid #FFCB05;
+margin: 4px 4px 4px 4px;
+    padding: 30px 30px 30px 30px;
+    font-style: bold;
+    background-color: #00274C;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  #footer-right {
+    text-align: right;
+  }
+  
+  #footer a:link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #footer a:visited {
+    color: #fff;
+  }
+  
+  #footer a:hover {
+    color: #00274C;
+    background-color: #FFCB05;
+  }
+  
+  #footer .github:hover {
+    background-color: #FFCB05;
+    padding: 10px;
+  }
+  
+  #footer .youtube:hover {
+    background-color: #FFCB05;
+    padding: 10px;
+  }
+  
+  #footer .instagram:hover {
+    background-color: #FFCB05;
+    padding: 10px;
+  }
+  
+  #footer .twitter:hover {
+    background-color: #FFCB05;
+    padding: 10px;
+  }
+  
+  #footer .facebook:hover {
+    background-color: #FFCB05;
+    padding: 10px;
+  }
+  
+  .social {
+    float: right;
+    margin: 4px 30px 30px 8px;
+    padding: 6px 20px 8px 6px;
+  }
+  
+  .copyright {
+    float: left;
+  }
+  
+  /**
+      Non-themed global styles.
+   */
+  .assign-container {
+    padding: 5px;
+    
+  }
+  
+  .assign-content {
+    width: 600px;
+    margin: 3% auto 0;
+  }
+  
+  .assign-results-text {
+    text-align: center;
+    font-size: 28px;
+  }
+  
+  .app-header {
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    color: black;
+    background-color: inherit;
+    padding-top: 16px;
+    
+  }
+  
+  .site-header {
+    font-size: 60px;
+    text-shadow: 2px 2px #FFCB05;
+  }
+  
+  .site-header:hover {
+    transition: letter-spacing 0.4s;
+    letter-spacing: 0.2em;
+  }
+  
+  .return-home:hover {
+    background-color: #FFCB05;
+    color: #00274C;
+  }
+  
+  .return-home:visited {
+    color: #00274C;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 3%;
+    border: 2px solid #00274C;
+  }
+  
+  .card-title {
+    text-align: center;
+    font-size: 1.4em;
+    color: black;
+    font-weight: bold;
+  
+  }
+  
+  .card-content {
+    padding: 3px 16px;
+    text-align: center;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn {
+    background-color: #00274C;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .btn:hover {
+    background-color: #FFCB05;
+  }
+  
+  .btn-primary {
+    background-color: #00274C;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #FFCB05;
+    color: #00274C;
+  }
+  
+  .input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .drop-down-menu {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #FFCB05;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  img {
+    border: 1px solid #FFCB05;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    float: inline-end;
+    margin-top: 4px;
+  }
+  
+  #center {
+    text-align: center;
+  }
+  
+  .clearfix {
+    overflow: auto;
+  }
+  
+  img:hover {
+    box-shadow: 0 0 2px 1px #FFCB05;
+  }
+  
+  .form {
+    display: inline-grid;
+    grid-template-columns: auto;
+  }
+  
+  .form-field {
+    padding: 20px;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+
+  li {
+    list-style: none;
+  }
