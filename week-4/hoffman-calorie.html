@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!--
     Title: hoffman-calorie.html
     Author: Lucas Hoffman 
@@ -153,4 +154,161 @@
 
         </script>
     </body>
+=======
+<!--
+    Title: hoffman-calorie.html
+    Author: Lucas Hoffman 
+    Date: 09/04/2021
+    Description: Assignment 4.2 hoffman-calorie.html file.
+	Link to GitHub repository: https://github.com/lucash0331/web-330
+    Link to Github Landing page: https://lucash0331.github.io/web-330/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Document Header information. -->
+    <head>
+        <title>WEB 330 – Enterprise JavaScript II</title>        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="Assignment 4.2 - Calorie App">
+        <meta name="author" content="Lucas Hoffman">
+        
+        <!-- Link the needed css files. -->
+        <link href="hoffman-calorie.css" type="text/css" rel="stylesheet">
+        <link href="../site.css" type="text/css" rel="stylesheet">
+        <link href="../theme.css" type="text/css" rel="stylesheet">
+
+        <!-- Link the fonts. -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+        
+        <!-- Link the theme.js javascript file. -->
+        <script src="../theme.js"></script>
+    </head>
+
+       <!--Application section-->
+   
+    <body class="light-theme">
+        <div class="container">
+            <!--Header of application-->
+            <h1 class="app-header">Welcome To the Calorie App!</h1>
+            <div class="assign-content">
+                <div class="card">
+                    <!--Title for main card-->
+                    <div class="card-title">Calorie Search Form</div>
+                    <div class="card-content">
+                        <div class="form">
+                            <!--Text Input section-->
+                            <div class="form-field">
+                                <label for="foodItem">Enter a food item:</label>
+                                <input type="text" class="input" id="txtFoodItem">
+                                <span id="foodList"></span>
+                            </div>
+                            <!--Search Button section-->
+                            <div class="form-field">
+                                <button class="btn btn-primary full-width" id="btnSearch">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                
+                <!--Return to home link-->
+                <a class="return-home" href="../index.html">Return</a>
+            
+            </div>
+            <br />
+ 
+            <!--Section where results are displayed-->
+
+            <div class="assign-content">
+                <div class="card">
+                    <div class="card-title">Search Results</div>
+                    <div class="card-content" id="searchResults" >
+                        <table>
+                            <thead>
+                                
+                            </thead>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Javascript Code Section-->
+
+        <script type="application/javascript" src="../theme.js"></script>
+        <script type="module">
+
+            setSelectedTheme();
+
+            // Imports the calorie converter module
+            import { CalorieConverter } from "./calorie-converter.js";
+
+            // Declaring the txtFoodItemE1 variable
+            let txtFoodItemEl = document.getElementById("txtFoodItem");
+            
+            //Function performed when the search button nis clicked
+            document.getElementById("btnSearch").onclick = function()
+            {
+            
+            // Declaring txtFoodItem variable
+            let txtFoodItem = txtFoodItemEl.value;
+
+            //Declaring food variable
+            let foods = CalorieConverter.find(txtFoodItem)
+
+            // Declaring tableData variable in the table format for results section
+            let tableData = `
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Calories</th>                   
+                            </tr>
+                        </thead>
+                        <tbody>
+                    `
+                
+            // For/of loop for table with the names/calories of items
+            for (let food of foods)
+                {
+                    let tableRow = `
+                    <tr>
+                        <td>${food.name}</td>
+                        <td>${food.calories}</td>
+                    </tr>`
+                    tableData += tableRow;
+                }
+
+                tableData += "</tbody></table>";
+                document.getElementById("searchResults").innerHTML = tableData;
+            }
+
+            //Event listener if "Enter" key is pressed to invoke the click function.
+            document.addEventListener("keyup", function(event)
+            {
+                
+                if (event.key == "Enter")
+                {
+                    document.getElementById("btnSearch").click();
+                }
+            });
+
+            // Declaring foodList variable
+            let foodList = CalorieConverter.data;
+
+            // This is how the foodList String is built
+            let foodListData = "<i>(Ex: ";
+            for (let food of foodList)
+            {
+                foodListData += `${food.name}, `;
+            }
+            foodListData = `${foodListData.slice(0,-2)})</i>`;
+
+            // Displays foodListData String
+            document.getElementById("foodList").innerHTML = foodListData;
+
+        </script>
+    </body>
+>>>>>>> 4fa8f3d93e75a6878f3c6e8b501b24a6ed4f4c03
 </html>

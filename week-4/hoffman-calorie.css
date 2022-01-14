@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
     Title: hoffman-calorie.css
     Author: Lucas Hoffman
@@ -13,4 +14,21 @@
     color: #df546a;
     font-size: 12px;
     letter-spacing: 2px;
+=======
+/**
+    Title: hoffman-calorie.css
+    Author: Lucas Hoffman
+    Date: 09/04/2021
+    Description: Styling for WEB 330 hoffman-calorie.html file.
+    Link to GitHub repository: https://github.com/lucash0331/web-330
+    Link to Github Landing page: https://lucash0331.github.io/web-330/
+ */
+
+  /** The styling for the foodList. */
+  #foodList {
+    float: left;
+    color: #df546a;
+    font-size: 12px;
+    letter-spacing: 2px;
+>>>>>>> 4fa8f3d93e75a6878f3c6e8b501b24a6ed4f4c03
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 Title: validator.js
 Author: Lucas Hoffman
@@ -43,4 +44,51 @@ export class Validator {
         }
         return this.messages.length == 0;
     }
+=======
+/*
+Title: validator.js
+Author: Lucas Hoffman
+Date: 09/18/2021
+Description: Validator JS file for week 6
+*/
+
+import { RequiredField } from "./required-field.js"
+import { FloatField } from "./float-field.js"
+import { FloatMinField } from "./float-min-field.js"
+import { FloatMaxField } from "./float-max-field.js"
+
+export class Validator {
+    validators = [];
+    messages = [];
+
+    constructor(name, field){
+        this.name = name;
+        this.field = field;
+    }
+
+    addRequiredField(){
+        this.validators.push(new RequiredField(this.name, this.field));
+    }
+
+    addRequiredFloatField() {
+        this.validators.push(new FloatField(this.name, this.field));
+    }
+
+    addFloatMinField(min) {
+        this.validators.push(new FloatMinField(this.name, this.field, min));
+    }
+
+    addFloatMaxField(max) {
+        this.validators.push(new FloatMaxField(this.name, this.field, max));
+    }
+
+    validate() {
+        for (const validator of this.validators) {
+            if (!validator.validate()) {
+                this.messages.push(validator.getMessage());
+            }
+        }
+        return this.messages.length == 0;
+    }
+>>>>>>> 4fa8f3d93e75a6878f3c6e8b501b24a6ed4f4c03
 }

@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 /**
 	Title: theme.css
 	Author: Lucas Hoffman
@@ -8,6 +9,17 @@
     Link to Github Landing page: https://lucash0331.github.io/web-330/
 */
 
+=======
+/**
+	Title: theme.css
+	Author: Lucas Hoffman
+	Date: 8/13/2021
+	Description: CSS file to demonstrate how to create CSS variables for website themes
+    Link to GitHub repository: https://github.com/lucash0331/web-330
+    Link to Github Landing page: https://lucash0331.github.io/web-330/
+*/
+
+>>>>>>> 4fa8f3d93e75a6878f3c6e8b501b24a6ed4f4c03
 
 /** Variables for light theme */
 
@@ -72,7 +84,10 @@ body.dark-theme {
 body {
   color: var(--text-color);
   background: var(--background-color);
+<<<<<<< HEAD
   font-family: "Oswald", Verdana, Arial, sans-serif;
+=======
+>>>>>>> 4fa8f3d93e75a6878f3c6e8b501b24a6ed4f4c03
 }
 
 a {
